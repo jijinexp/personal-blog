@@ -1,7 +1,28 @@
 baseURL: "https://jijinexp.github.io/personal-blog/"
-languageCode: "en-us"
-title: "Personal Blog"
+locale: "en-us"
+title: "Jijin's Blog"
 
 module:
   imports:
     - path: github.com/imfing/hextra
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  search:
+    enable: true
+
+menu:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 1
+    - name: Search
+      weight: 2
+      params:
+        type: search
+    - name: Theme
+      weight: 3
+      params:
+        type: theme-toggle
