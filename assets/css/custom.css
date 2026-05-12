@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hextra-footer {
+  margin-top: auto;
+}
+
+/* Theme toggle icons */
+.sun-icon { display: none; }
+.moon-icon { display: block; }
+
+.dark .sun-icon { display: block; }
+.dark .moon-icon { display: none; }
